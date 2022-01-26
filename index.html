@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,19 +18,25 @@
         <div class="header__wrp container">
             <div class="header__logo-form-wrp">
         <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
-        <div class="header__search"><img src="./img/magnifying-glass.svg" alt="search"></div>
+        <div class="header__search">
+            <form class="header__search-form">
+            <a class="header__search-link" href="#"><img src="./img/magnifying-glass.svg" alt="search"></a>
+            <input class="header__search-form_input" type="search" id="search" placeholder="Search">
+            <label class="visually-hidden" for="search">Search</label>
+            </form>
+        </div>
     </div>
     <div>
         <button class="header__menu-btn"><img src="./img/burger.svg" alt="burger"></button>
-        <a href="#" class="header__link"><img src="./img/registration.svg" alt="registration"></a>
-        <a href="#" class="header__link"><img src="./img/basket.svg" alt="basket"></a>
+        <a href="#" class="header__link header__registration"><img src="./img/registration.svg" alt="registration"></a>
+        <a href="#" class="header__link header__basket"><img src="./img/basket.svg" alt="basket"></a>
     </div>
     </div>
         <nav class="header__nav">
             <h2 class="header__nav-title">menu</h2>
             <ul class="header__nav-list">
                 <li class="header__nav-item nav-sub-item">
-                    <a class="nav-sub-item__link" href="#">man</a>
+                    <a class="nav-sub-item__link-header" href="#">man</a>
                     <ul class=nav-sub-item__list>
                         <li><a class="nav-sub-item__link" href="#">Accessories</a></li>
                         <li><a class="nav-sub-item__link" href="#">Bags</a></li>
@@ -38,23 +44,25 @@
                         <li><a class="nav-sub-item__link" href="#">T-Shirts</a></li>
                     </ul>
                 </li>
-                <li><a href="#">woman</a>
+                <li>
+                    <a class="nav-sub-item__link-header" href="#">woman</a>
                     <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Accessories</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Jackets & Coats</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Polos</a></li>
+                        <li><a class="nav-sub-item__link" href="#">T-Shirts</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Shirts</a></li>
                     </ul>
                 </li>
-                <li><a href="#">kids</a>
+                <li>
+                    <a class="nav-sub-item__link-header" href="#">kids</a>
                     <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">Bags</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Accessories</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Jackets & Coats</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Polos</a></li>
+                        <li><a class="nav-sub-item__link" href="#">T-Shirts</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Shirts</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Bags</a></li>
                     </ul>
                 </li>
             </ul>
@@ -93,16 +101,24 @@
             <p class="products__subtitle">Shop for items based on what we featured in this week</p>
             <ul class="products__list container">
                 <li class="products__item">
+                    <div class="products__wrapper">
                     <img class="products__item-img" src="./img/item1.png" alt="product1" width="360px" height="420px">
+                    <div class="products__overlay"></div>
+                    <button class="products__button-cart">Add to Cart</button>
+                    </div>
                     <div class="products__item-content">
                     <h3 class="products__item-title">ellery x m'o capsule</h3>
                     <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
                     <p class="products__item-price">$52.00</p>
-                </div>
+                    </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__wrapper">
                     <img class="products__item-img" src="./img/item2.png" alt="product2" width="360px" height="420px">
+                    <div class="products__overlay"></div>
+                    <button class="products__button-cart">Add to Cart</button>
+                    </div>
                     <div class="products__item-content">
                     <h3 class="products__item-title">ellery x m'o capsule</h3>
                     <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -111,7 +127,11 @@
                 </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__wrapper">
                     <img class="products__item-img" src="./img/item3.jpg" alt="product3" width="360px" height="420px">
+                    <div class="products__overlay"></div>
+                    <button class="products__button-cart">Add to Cart</button>
+                    </div>
                     <div class="products__item-content">
                     <h3 class="products__item-title">ellery x m'o capsule</h3>
                     <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -120,7 +140,11 @@
                 </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__wrapper">
                     <img class="products__item-img" src="./img/item4.png" alt="product4" width="360px" height="420px">
+                    <div class="products__overlay"></div>
+                    <button class="products__button-cart">Add to Cart</button>
+                    </div>
                     <div class="products__item-content">
                     <h3 class="products__item-title">ellery x m'o capsule</h3>
                     <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -129,7 +153,11 @@
                 </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__wrapper">
                     <img class="products__item-img" src="./img/item5.png" alt="product5" width="360px" height="420px">
+                    <div class="products__overlay"></div>
+                    <button class="products__button-cart">Add to Cart</button>
+                    </div>
                     <div class="products__item-content">
                     <h3 class="products__item-title">ellery x m'o capsule</h3>
                     <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -138,7 +166,11 @@
                 </div>
                 </li>
                 <li class="products__item">
+                    <div class="products__wrapper">
                     <img class="products__item-img" src="./img/item6.png" alt="product6" width="360px" height="420px">
+                    <div class="products__overlay"></div>
+                    <button class="products__button-cart">Add to Cart</button>
+                    </div>
                     <div class="products__item-content">
                     <h3 class="products__item-title">ellery x m'o capsule</h3>
                     <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
@@ -176,31 +208,39 @@
     </main>
     <footer>
         <section class="review">
-            <div class="review__content container">
+            <div class="review-wrp container">
+            <div class="review__content">
             <img class="review__img"src="./img/portrait.png" alt="portrait">
             <blockquote class="review__quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</blockquote>
         </div>
-            <section class="form container">
+            <section class="form">
             <h2 class="form__title">subscribe</h2>
             <p class="form__subtitle">for our newletter and promotion</p>
+            <form class="form__content">
+                <input class="form__email" type="email" id="email" placeholder="Enter Your Email">
+                <label class="visually-hidden" for="email">Email</label>
+                <input class="form__button"type="submit" id="submit-button" value="Subscribe">
+                <label class="visually-hidden" for="submit-button">Subscribe</label>
+            </form>
             </section>
+        </div>
         </section>
         <section class="copyright">
             <div class="copyright__content">
             <p class="copyright__text" >&copy; 2021 Brand All Rights Reserved.</p>
         </div>
             <ul class="copyright__list">
-                <li class="copyright__link">
-                    <a href="#"><img src="./img/facebook1.svg" alt="facebook"></a>
+                <li class="copyright__link copyright__facebook">
+                    <a href="#"></a>
                 </li>
-                <li class="copyright__link">
-                    <a href="#"><img src="./img/instagram1.svg" alt="instagram"></a>
+                <li class="copyright__link copyright__instagram">
+                    <a href="#"></a>
                 </li>
-                <li class="copyright__link">
-                    <a href="#"><img src="./img/pinterest1.svg" alt="pinterest"></a>
+                <li class="copyright__link copyright__pinterest">
+                    <a href="#"></a>
                 </li>
-                <li class="copyright__link">
-                    <a href="#"><img src="./img/twitter1.svg" alt="twitter"></a>
+                <li class="copyright__link copyright__twitter">
+                    <a href="#"></a>
                 </li>
             </ul>
             </section>

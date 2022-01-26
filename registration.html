@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrp container">
+            <div class="header__logo-form-wrp">
+        <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__search">
+            <form class="header__search-form">
+            <a class="header__search-link" href="#"><img src="./img/magnifying-glass.svg" alt="search"></a>
+            <input class="header__search-form_input" type="search" id="search" placeholder="Search">
+            <label class="visually-hidden" for="search">Search</label>
+            </form>
+        </div>
+    </div>
+    <div>
+        <button class="header__menu-btn"><img src="./img/burger.svg" alt="burger"></button>
+        <a href="#" class="header__link header__registration"><img src="./img/registration.svg" alt="registration"></a>
+        <a href="#" class="header__link header__basket"><img src="./img/basket.svg" alt="basket"></a>
+    </div>
+    </div>
+        <nav class="header__nav">
+            <h2 class="header__nav-title">menu</h2>
+            <ul class="header__nav-list">
+                <li class="header__nav-item nav-sub-item">
+                    <a class="nav-sub-item__link-header" href="#">man</a>
+                    <ul class=nav-sub-item__list>
+                        <li><a class="nav-sub-item__link" href="#">Accessories</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Bags</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Denim</a></li>
+                        <li><a class="nav-sub-item__link" href="#">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-sub-item__link-header" href="#">woman</a>
+                    <ul>
+                        <li><a class="nav-sub-item__link" href="#">Accessories</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Jackets & Coats</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Polos</a></li>
+                        <li><a class="nav-sub-item__link" href="#">T-Shirts</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Shirts</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-sub-item__link-header" href="#">kids</a>
+                    <ul>
+                        <li><a class="nav-sub-item__link" href="#">Accessories</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Jackets & Coats</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Polos</a></li>
+                        <li><a class="nav-sub-item__link" href="#">T-Shirts</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Shirts</a></li>
+                        <li><a class="nav-sub-item__link" href="#">Bags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<section class="registration">
+    <h1 class="registration__heading container">registration</h1>
+</section>
+<section class="form_and_perks">
+    <h2 class="visually-hidden">Registration Form</h2>
+    <form class="form_and_perks__form container" action="#">
+        <fieldset>
+            <legend class="form_and_perks__legend">Your Name</legend>
+            <p class="form_and_perks__first_name">
+                <input class="form_and_perks__first_name-input" id="first-name" type="text" required placeholder="First Name">
+                <label class="visually-hidden" for="first-name">First Name</label>
+            </p>
+            <p class="form_and_perks__last_name">
+                <input class="form_and_perks__last_name-input" id="last-name" type="text" required placeholder="Last Name">
+                <label class="visually-hidden" for="last-name">Last Name</label>
+            </p>
+            <div class="form_and_perks__gender">
+                <input type="radio" id="gender-male" name="contact" value="Male">
+                <label class="label" for="gender-male">Male</label>
+                <input type="radio" id="gender-female" name="contact" value="Female">
+                <label class="label" for="gender-female">Female</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Login details</legend>
+            <p>
+                <input id="email" type="email" required placeholder="Email">
+                <label class="visually-hidden" for="email">Email</label>
+            </p>
+            <p>
+                <input id="password" type="text" required placeholder="Password">
+                <label class="visually-hidden" for="password">Password</label>
+            </p>
+        </fieldset>
+        <p>
+            Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+        </p>
+        <button>join now</button>
+    </section>
+</form>
+        <section class="perks container">
+            <h3 class="perks__heading">loyalty has its perks</h3>
+            <p class="perks__subheading">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul class="perks__list">
+                <li class="perks__item">15% off welcome offer</li>
+                <li class="perks__item">Free shipping, returns and exchanges on all orders</li>
+                <li class="perks__item">$10 off a purchase on your birthday</li>
+                <li class="perks__item">Early access to products</li>
+                <li class="perks__item">Exclusive offers & rewards</li>
+            </ul>
+        </section>
+        <footer>
+            <section class="review">
+                <div class="review-wrp container">
+                <div class="review__content">
+                <img class="review__img"src="./img/portrait.png" alt="portrait">
+                <blockquote class="review__quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</blockquote>
+            </div>
+                <section class="form">
+                <h2 class="form__title">subscribe</h2>
+                <p class="form__subtitle">for our newletter and promotion</p>
+                <form class="form__content">
+                    <input class="form__email" type="email" id="email" placeholder="Enter Your Email">
+                    <label class="visually-hidden" for="email">Email</label>
+                    <input class="form__button"type="submit" id="submit-button" value="Subscribe">
+                    <label class="visually-hidden" for="submit-button">Subscribe</label>
+                </form>
+                </section>
+            </div>
+            </section>
+            <section class="copyright">
+                <div class="copyright__content">
+                <p class="copyright__text" >&copy; 2021 Brand All Rights Reserved.</p>
+            </div>
+                <ul class="copyright__list">
+                    <li class="copyright__link copyright__facebook">
+                        <a href="#"></a>
+                    </li>
+                    <li class="copyright__link copyright__instagram">
+                        <a href="#"></a>
+                    </li>
+                    <li class="copyright__link copyright__pinterest">
+                        <a href="#"></a>
+                    </li>
+                    <li class="copyright__link copyright__twitter">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+                </section>
+        </footer>
+</body>
+</html>
